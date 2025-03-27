@@ -1,0 +1,266 @@
+[
+  {
+    "name": "TDS",
+    "desc": "TDS (Total Dissolved Solids) sensor values are typically measured in ppm (parts per million) and indicate the concentration of dissolved ions in water.",
+    "category": "Water Quality",
+    "image": "static/datalog/plotbans/plotbans-tds.jpg",
+    "bans": [
+      {
+        "from": null,
+        "to": 50,
+        "color": "#c8e6c9",
+        "label": "Ultra-pure water",
+        "desc": "Laboratory, medical use, semiconductor industry"
+      },
+      {
+        "from": 50,
+        "to": 150,
+        "color": "#b2dfdb",
+        "label": "Soft water",
+        "desc": "Distilled water, reverse osmosis (RO) water"
+      },
+      {
+        "from": 150,
+        "to": 250,
+        "color": "#90caf9",
+        "label": "Normal drinking water",
+        "desc": "Safe for drinking, slightly mineralized"
+      },
+      {
+        "from": 250,
+        "to": 500,
+        "color": "#64b5f6",
+        "label": "High-quality drinking water",
+        "desc": "Ideal for most bottled water standards"
+      },
+      {
+        "from": 500,
+        "to": 1000,
+        "color": "#fff59d",
+        "label": "Acceptable drinking water",
+        "desc": "May be safe but can taste salty, not ideal"
+      },
+      {
+        "from": 1000,
+        "to": 2000,
+        "color": "#ffe082",
+        "label": "Poor water quality",
+        "desc": "Brackish water, unsuitable for drinking"
+      },
+      {
+        "from": 2000,
+        "to": 5000,
+        "color": "#ffcc80",
+        "label": "Very poor water quality",
+        "desc": "Industrial use, some irrigation purposes"
+      },
+      {
+        "from": 5000,
+        "to": 1000000,
+        "color": "#ef9a9a",
+        "label": "Highly contaminated",
+        "desc": "Saline water, not safe for most uses"
+      }
+    ]
+  },
+  {
+    "name": "Temperature F",
+    "desc": "This table organizes everyday temperatures into seven intuitive bands—from \"Very Cold\" to \"Very Hot\"—with approximate Fahrenheit and Celsius ranges and corresponding color codes that visually reflect their thermal feel.",
+    "category": "Temperature",
+    "image": "static/datalog/plotbans/plotbans-temperature-f.jpg",
+    "bans": [
+      {
+        "from": 0,
+        "to": 32,
+        "color": "#AFC8F0",
+        "label": "Very Cold",
+        "desc": "Freezing conditions; heavy winter clothing is essential."
+      },
+      {
+        "from": 32,
+        "to": 45,
+        "color": "#BBD9E8",
+        "label": "Cold",
+        "desc": "Chilly; a warm jacket and layers are advisable."
+      },
+      {
+        "from": 45,
+        "to": 59,
+        "color": "#CFEFE5",
+        "label": "Cool",
+        "desc": "Refreshing and brisk; a light jacket may be sufficient."
+      },
+      {
+        "from": 59,
+        "to": 68,
+        "color": "#FAE79C",
+        "label": "Mild",
+        "desc": "Comfortable and pleasant; minimal layers needed."
+      },
+      {
+        "from": 68,
+        "to": 77,
+        "color": "#F8C984",
+        "label": "Warm",
+        "desc": "Pleasantly warm; typical for short sleeves and light clothing."
+      },
+      {
+        "from": 77,
+        "to": 85,
+        "color": "#F2A09A",
+        "label": "Hot",
+        "desc": "Noticeably warm; cooling measures may be needed."
+      },
+      {
+        "from": 85,
+        "to": 999,
+        "color": "#D67F75",
+        "label": "Very Hot",
+        "desc": "High temperatures; heat warnings and precautions are advised."
+      }
+    ]
+  },
+  {
+    "name": "Temperature C",
+    "desc": "This table organizes everyday temperatures into seven intuitive bands—from \"Very Cold\" to \"Very Hot\"—with approximate Fahrenheit and Celsius ranges and corresponding color codes that visually reflect their thermal feel.",
+    "category": "Temperature",
+    "image": "static/datalog/plotbans/plotbans-temperature-c.jpg",
+    "bans": [
+      {
+        "from": 0,
+        "to": 0,
+        "color": "#AFC8F0",
+        "label": "Very Cold",
+        "desc": "Freezing conditions; heavy winter clothing is essential."
+      },
+      {
+        "from": 0,
+        "to": 7,
+        "color": "#BBD9E8",
+        "label": "Cold",
+        "desc": "Chilly; a warm jacket and layers are advisable."
+      },
+      {
+        "from": 7,
+        "to": 15,
+        "color": "#CFEFE5",
+        "label": "Cool",
+        "desc": "Refreshing and brisk; a light jacket may be sufficient."
+      },
+      {
+        "from": 15,
+        "to": 20,
+        "color": "#FAE79C",
+        "label": "Mild",
+        "desc": "Comfortable and pleasant; minimal layers needed."
+      },
+      {
+        "from": 20,
+        "to": 25,
+        "color": "#F8C984",
+        "label": "Warm",
+        "desc": "Pleasantly warm; typical for short sleeves and light clothing."
+      },
+      {
+        "from": 25,
+        "to": 29,
+        "color": "#F2A09A",
+        "label": "Hot",
+        "desc": "Noticeably warm; cooling measures may be needed."
+      },
+      {
+        "from": 29,
+        "to": 999,
+        "color": "#D67F75",
+        "label": "Very Hot",
+        "desc": "High temperatures; heat warnings and precautions are advised."
+      }
+    ]
+  },
+  {
+    "name": "Relative Humidity",
+    "desc": "A five-band humidity table based on common perceptions of how relative humidity feels",
+    "category": "Humidity",
+    "image": "static/datalog/plotbans/plotbans-relative-huidity.jpg",
+    "bans": [
+      {
+        "from": 0,
+        "to": 20,
+        "color": "#E8A37F",
+        "label": "Very Dry",
+        "desc": "Air feels extremely dry, often causing discomfort such as dry skin and increased static electricity."
+      },
+      {
+        "from": 20,
+        "to": 40,
+        "color": "#F7C77E",
+        "label": "Dry",
+        "desc": "Noticeably dry air; while some may find it refreshing, it can still lead to mild dryness."
+      },
+      {
+        "from": 40,
+        "to": 60,
+        "color": "#B9EBD0",
+        "label": "Comfortable",
+        "desc": "Ideal moisture level for comfort, helping maintain skin hydration without feeling sticky."
+      },
+      {
+        "from": 60,
+        "to": 80,
+        "color": "#89D8CD",
+        "label": "Humid",
+        "desc": "Air feels noticeably moist, which can lead to a sticky sensation and reduced evaporation from the skin."
+      },
+      {
+        "from": 80,
+        "to": 100,
+        "color": "#7FA6CD",
+        "label": "Very Humid",
+        "desc": "Extremely high moisture levels; the air feels heavy and can contribute to discomfort and overheating."
+      }
+    ]
+  },
+  {
+    "name": "Soil Humidity",
+    "desc": "A five-band table for soil humidity levels—measured as volumetric water content—that can help farmers gauge how dry or wet their soil is for crop growth. Keep in mind these ranges are approximate and may vary with soil type and crop needs.",
+    "category": "Humidity",
+    "image": "static/datalog/plotbans/plotbans-soil-humidity.jpg",
+    "bans": [
+      {
+        "from": 0,
+        "to": 10,
+        "color": "#E4C9AC",
+        "label": "Very Dry",
+        "desc": "Extremely dry soil; immediate irrigation is critical to avoid crop stress."
+      },
+      {
+        "from": 10,
+        "to": 20,
+        "color": "#D7A876",
+        "label": "Dry",
+        "desc": "Dry conditions; soil moisture is below optimal levels, so additional water is needed soon."
+      },
+      {
+        "from": 20,
+        "to": 30,
+        "color": "#99D1B3",
+        "label": "Optimal",
+        "desc": "Ideal moisture for most crops; supports healthy root development and nutrient uptake."
+      },
+      {
+        "from": 30,
+        "to": 40,
+        "color": "#A5D5F4",
+        "label": "Wet",
+        "desc": "Wet soil; excess moisture may lead to reduced oxygen availability for roots and potential disease."
+      },
+      {
+        "from": 40,
+        "to": 100,
+        "color": "#6E96BD",
+        "label": "Waterlogged",
+        "desc": "Saturated conditions; drainage improvement is necessary to prevent root rot and crop damage."
+      }
+    ]
+  }
+]
