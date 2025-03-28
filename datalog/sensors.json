@@ -259,5 +259,17 @@
         "category": "humidity"
       }
     ]
+  },
+  {
+    "id": "GENERIC_ANALOG",
+    "type": "ANALOG",
+    "label": "Analog: other analog sensor",
+    "image": null,
+    "fields": [
+      {
+        "label": "Other",
+        "key": "Other"
+      }
+    ]
   }
 ]
