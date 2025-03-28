@@ -6,7 +6,7 @@
     "image": "static/datalog/plotbans/plotbans-tds.jpg",
     "bans": [
       {
-        "from": null,
+        "from": 0,
         "to": 50,
         "color": "#c8e6c9",
         "label": "Ultra-pure water",
