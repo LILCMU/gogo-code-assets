@@ -253,7 +253,7 @@
     "fields": [
       {
         "label": "Soil Humidity",
-        "key": "SoilHumidity"
+        "key": "SoilHumidity",
         "category": "Humidity"
       }
     ]
