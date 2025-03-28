@@ -5,7 +5,7 @@
   {
     "id": "SHT35",
     "type": "MULTI",
-    "label": "I2C High Accuracy Temp & Humid Sensor",
+    "label": "I2C High Accuracy Temp & Humid Sensor (SHT35)",
     "model": "SHT35",
     "image": "static/datalog/sensor-img/sigh-accuracy-temp-humi-sensor-sht35.jpg",
     "fields": [
@@ -41,7 +41,8 @@
   {
     "id": "DLS",
     "type": "MULTI",
-    "label": "Digital Light Sensor",
+    "label": "Digital Light Sensor (TSL2561)",
+    "model": "TSL2561",
     "image": "static/datalog/sensor-img/digital-light-sensor-tsl2561.jpg",
     "fields": [
       {
@@ -54,7 +55,7 @@
   {
     "id": "SGP41",
     "type": "MULTI",
-    "label": "Air Quality Sensor",
+    "label": "Air Quality Sensor (SGP41)",
     "model": "SGP41",
     "image": "static/datalog/sensor-img/smart-air-quality-sensor-sgp41.jpg",
     "fields": [
@@ -73,7 +74,7 @@
   {
     "id": "HM3301",
     "type": "MULTI",
-    "label": "Laser PM2.5 Sensor",
+    "label": "Laser PM2.5 Sensor (HM3301)",
     "model": "HM3301",
     "image": "static/datalog/sensor-img/laser-pm2.5-dust-sensor.jpg",
     "fields": [
@@ -97,7 +98,7 @@
   {
     "id": "BME680",
     "type": "MULTI",
-    "label": "4-in-1 Environmental sensor",
+    "label": "4-in-1 Environmental sensor (BME680)",
     "model": "BME680",
     "image": "static/datalog/sensor-img/4-in-1-env-sensor-bme680.jpg",
     "fields": [
@@ -146,7 +147,8 @@
   {
     "id": "DISTANCE",
     "type": "DIGITAL",
-    "label": "Distance",
+    "label": "Grove - Ultrasonic Ranger (HC-SR04P and JSN-SR04T)",
+    "model": "HC-SR04P and JSN-SR04T",
     "image": null,
     "fields": [
       {
@@ -173,7 +175,7 @@
   {
     "id": "TDS",
     "type": "ANALOG",
-    "label": "Analog",
+    "label": "Analog: Grove - TDS Sensor",
     "image": null,
     "fields": [
       {
@@ -184,7 +186,7 @@
   },
   {
     "id": "RAIN_SENSOR",
-    "type": "ANALOG",
+    "type": "ANALOG: Grove - Water and Rain Sensor",
     "label": "Analog",
     "image": null,
     "fields": [
@@ -197,7 +199,7 @@
   {
     "id": "HEART_RATE",
     "type": "ANALOG",
-    "label": "Analog",
+    "label": "Analog: Grove - Ear-clip Heart Rate Sensor",
     "image": null,
     "fields": [
       {
@@ -209,7 +211,7 @@
   {
     "id": "BUTTON_SET",
     "type": "ANALOG",
-    "label": "Analog",
+    "label": "Analog: Four-direction button/Joystick",
     "image": null,
     "fields": [
       {
@@ -221,7 +223,7 @@
   {
     "id": "LEVER",
     "type": "ANALOG",
-    "label": "Analog",
+    "label": "Analog: Lever Switch",
     "image": null,
     "fields": [
       {
@@ -233,7 +235,7 @@
   {
     "id": "LOUDNESS",
     "type": "ANALOG",
-    "label": "Analog",
+    "label": "Analog: Loudness Sensor",
     "image": null,
     "fields": [
       {
@@ -248,7 +250,7 @@
   {
     "id": "SOIL_HUMIDITY",
     "type": "ANALOG",
-    "label": "Analog",
+    "label": "Analog: Grove - Capacitive Moisture Sensor",
     "image": null,
     "fields": [
       {
