@@ -254,6 +254,7 @@
       {
         "label": "Soil Humidity",
         "key": "SoilHumidity"
+        "category": "Humidity"
       }
     ]
   }
