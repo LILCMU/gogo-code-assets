@@ -186,8 +186,8 @@
   },
   {
     "id": "RAIN_SENSOR",
-    "type": "ANALOG: Grove - Water and Rain Sensor",
-    "label": "Analog",
+    "type": "ANALOG",
+    "label": "Analog: : Grove - Water and Rain Sensor",
     "image": null,
     "fields": [
       {
