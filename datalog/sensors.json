@@ -1,11 +1,11 @@
 [
   {
-    "": "-------------------------- Multi Port Sensors --------------------------"
+    "": "-------------------------- #NOTE: Multi Port Sensors --------------------------"
   },
   {
     "id": "SHT35",
     "type": "MULTI",
-    "label": "I2C High Accuracy Temp & Humid Sensor (SHT35)",
+    "label": "I2C High Accuracy Temp & Humid Sensor",
     "model": "SHT35",
     "image": "static/datalog/sensor-img/sigh-accuracy-temp-humi-sensor-sht35.jpg",
     "fields": [
@@ -13,92 +13,97 @@
         "label": "Temperature (Celsius)",
         "key": "Temperature_C",
         "unit": "°C",
-        "value": "(tasmotamessage \"Temperature\")",
+        "value": "tasmotamessage \"Temperature\"",
         "category": "temperature"
       },
       {
         "label": "Temperature (Fahrenheit)",
         "key": "Temperature_F",
         "unit": "°F",
-        "value": "((((tonumber (tasmotamessage \"Temperature\")) * 9) / 5) + 32)",
+        "value": "(((tonumber (tasmotamessage \"Temperature\")) * 9) / 5) + 32",
         "category": "temperature"
       },
       {
         "label": "Humidity",
         "key": "Humidity",
         "unit": "%",
-        "value": "(tasmotamessage \"Humidity\")",
+        "value": "tasmotamessage \"Humidity\"",
         "category": "humidity"
       },
       {
         "label": "Dew point",
         "key": "DewPoint",
         "unit": "°C",
-        "value": "(tasmotamessage \"DewPoint\")"
+        "value": "tasmotamessage \"DewPoint\""
       }
     ]
   },
   {
     "id": "DLS",
     "type": "MULTI",
-    "label": "Digital Light Sensor (TSL2561)",
-    "model": "TSL2561",
+    "label": "Digital Light Sensor",
     "image": "static/datalog/sensor-img/digital-light-sensor-tsl2561.jpg",
     "fields": [
       {
         "label": "Illuminance",
         "key": "Illuminance",
-        "unit": "lux"
+        "unit": "lux",
+        "value": "tasmotamessage \"Illuminance\""
       }
     ]
   },
   {
     "id": "SGP41",
     "type": "MULTI",
-    "label": "Air Quality Sensor (SGP41)",
+    "label": "Air Quality Sensor",
     "model": "SGP41",
     "image": "static/datalog/sensor-img/smart-air-quality-sensor-sgp41.jpg",
     "fields": [
       {
         "label": "TVOC",
         "key": "TVOC",
-        "unit": ""
+        "unit": "",
+        "value": "tasmotamessage \"TVOC\""
       },
       {
         "label": "NOx",
         "key": "NOx",
-        "unit": ""
+        "unit": "",
+        "value": "tasmotamessage \"NOx\""
       }
     ]
   },
   {
     "id": "HM3301",
     "type": "MULTI",
-    "label": "Laser PM2.5 Sensor (HM3301)",
+    "label": "Laser PM2.5 Sensor",
     "model": "HM3301",
     "image": "static/datalog/sensor-img/laser-pm2.5-dust-sensor.jpg",
     "fields": [
       {
         "label": "PM 1 µm",
         "key": "PM1",
-        "unit": "µg/m³"
+        "unit": "µg/m³",
+        "value": "tasmotamessage \"PM1\""
       },
       {
         "label": "PM 2.5 µm",
         "key": "PM2.5",
-        "unit": "µg/m³"
+        "unit": "µg/m³",
+        "value": "tasmotamessage \"PM2.5\""
       },
       {
         "label": "PM 10 µm",
         "key": "PM10",
-        "unit": "µg/m³"
+        "unit": "µg/m³",
+        "value": "tasmotamessage \"PM10\""
       }
     ]
   },
   {
     "id": "BME680",
     "type": "MULTI",
-    "label": "4-in-1 Environmental sensor (BME680)",
+    "label": "4-in-1 Environmental sensor",
     "model": "BME680",
     "image": "static/datalog/sensor-img/4-in-1-env-sensor-bme680.jpg",
     "fields": [
@@ -107,7 +112,7 @@
         "key": "Temperature_C",
         "unit": "°C",
         "datalogName": "Temperature_C",
-        "value": "(tasmotamessage \"Temperature\")",
+        "value": "tasmotamessage \"Temperature\"",
         "category": "temperature"
       },
       {
@@ -121,47 +126,51 @@
       {
         "label": "Humidity",
         "key": "Humidity",
-        "unit": "%"
+        "unit": "%",
+        "value": "tasmotamessage \"Humidity\""
       },
       {
         "label": "Dew point",
         "key": "DewPoint",
-        "unit": "°C"
+        "unit": "°C",
+        "value": "tasmotamessage \"DewPoint\""
       },
       {
         "label": "Pressure",
         "key": "Pressure",
-        "unit": "hPa"
+        "unit": "hPa",
+        "value": "tasmotamessage \"Pressure\""
       },
       {
         "label": "Gas",
         "key": "Gas",
         "unit": "kΩ",
+        "value": "tasmotamessage \"Gas\"",
         "category": "air quality"
       }
     ]
   },
   {
-    "": "-------------------------- Configurable Port Sensors --------------------------"
+    "": "-------------------------- #NOTE: Configurable Port Sensors --------------------------"
   },
   {
     "id": "DISTANCE",
     "type": "DIGITAL",
     "label": "Grove - Ultrasonic Ranger (HC-SR04P and JSN-SR04T)",
     "model": "HC-SR04P and JSN-SR04T",
-    "image": null,
+    "image": "static/datalog/sensor-img/digital-ultrasonic-ranger.jpg",
     "fields": [
       {
         "label": "Distance (cm)",
         "key": "Distance_cm",
         "unit": "cm",
-        "value": "(tasmotamessage \"Distance\")"
+        "value": "tasmotamessage \"Distance\""
       },
       {
         "label": "Distance (Inch)",
         "key": "Distance_inch",
         "unit": "Inch",
-        "value": "(tonumber (tasmotamessage \"Distance\") / 2.54)"
+        "value": "tonumber (tasmotamessage \"Distance\") / 2.54"
       }
     ],
     "setupCode": {
@@ -170,29 +179,40 @@
     }
   },
   {
-    "": "-------------------------- Input Port Sensors --------------------------"
+    "": "-------------------------- #NOTE: Input Port Sensors --------------------------"
   },
   {
     "id": "TDS",
     "type": "ANALOG",
-    "label": "Analog: Grove - TDS Sensor",
-    "image": null,
+    "label": "Analog: Grove - Total Dissolved Solids (TDS) Sensor",
+    "image": "static/datalog/sensor-img/analog-tds.jpg",
     "fields": [
       {
-        "label": "TDS",
-        "key": "TDS"
+        "label": "TDS (Analog)",
+        "key": "TDS_Analog"
+      },
+      {
+        "label": "TDS (ppm)",
+        "key": "TDS_ppm",
+        "unit": "ppm",
+        "value": "(133.42 * (5.0*(readsensor %INPUT%)/1023) * (5.0*(readsensor %INPUT%)/1023) * (5.0*(readsensor %INPUT%)/1023) - 255.86 * (5.0*(readsensor %INPUT%)/1023) * (5.0*(readsensor %INPUT%)/1023) + 857.39 * (5.0*(readsensor %INPUT%)/1023)) * 0.5"
       }
     ]
   },
   {
     "id": "RAIN_SENSOR",
     "type": "ANALOG",
-    "label": "Analog: : Grove - Water and Rain Sensor",
-    "image": null,
+    "label": "Analog: Grove - Water and Rain Sensor",
+    "image": "static/datalog/sensor-img/analog-water-and-rain-sensor.jpg",
     "fields": [
       {
-        "label": "Rain sensor",
-        "key": "RainSensor"
+        "label": "Rain State",
+        "key": "Rain_State",
+        "value": "(readsensor %INPUT%) > 512"
+      },
+      {
+        "label": "Rain (Analog)",
+        "key": "Rain_Analog"
       }
     ]
   },
@@ -200,11 +220,12 @@
     "id": "HEART_RATE",
     "type": "ANALOG",
     "label": "Analog: Grove - Ear-clip Heart Rate Sensor",
-    "image": null,
+    "image": "static/datalog/sensor-img/analog-earclip-heart-rate.jpg",
     "fields": [
       {
-        "label": "Heart rate",
-        "key": "HeartRate"
+        "label": "Heart Rate (bpm)",
+        "key": "Heart_Rate_bpm",
+        "unit": "bpm"
       }
     ]
   },
@@ -212,11 +233,11 @@
     "id": "BUTTON_SET",
     "type": "ANALOG",
     "label": "Analog: Four-direction button/Joystick",
-    "image": null,
+    "image": "static/datalog/sensor-img/analog-button-set.jpg",
     "fields": [
       {
-        "label": "Button set",
-        "key": "ButtonSet"
+        "label": "Direction (Analog)",
+        "key": "Direction_Analog"
       }
     ]
   },
@@ -224,11 +245,16 @@
     "id": "LEVER",
     "type": "ANALOG",
     "label": "Analog: Lever Switch",
-    "image": null,
+    "image": "static/datalog/sensor-img/analog-lever-switch.jpg",
     "fields": [
       {
-        "label": "Lever",
-        "key": "Lever"
+        "label": "Switch State",
+        "key": "Switch_State",
+        "value": "(readsensor %INPUT%) > 512"
+      },
+      {
+        "label": "Switch (Analog)",
+        "key": "Switch_Analog"
       }
     ]
   },
@@ -236,13 +262,13 @@
     "id": "LOUDNESS",
     "type": "ANALOG",
     "label": "Analog: Loudness Sensor",
-    "image": null,
+    "image": "static/datalog/sensor-img/analog-loudness-sensor.jpg",
     "fields": [
       {
-        "label": "Loudness",
-        "key": "Loudness",
+        "label": "Loudness (Analog)",
+        "key": "Loudness_Analog",
         "setupCode": "setinputfilter %INPUT% 2",
-        "code": "readfilteredinput %INPUT%",
+        "value": "readfilteredinput %INPUT%",
         "endCode": "resetinputminmax %INPUT%"
       }
     ]
@@ -251,24 +277,43 @@
     "id": "SOIL_HUMIDITY",
     "type": "ANALOG",
     "label": "Analog: Grove - Capacitive Moisture Sensor",
-    "image": null,
+    "image": "static/datalog/sensor-img/analog-moisture-sensor.jpg",
     "fields": [
       {
-        "label": "Soil Humidity",
-        "key": "SoilHumidity",
+        "label": "Soil Moisture (Analog)",
+        "key": "Soil_Moisture_Analog",
+        "category": "humidity"
+      },
+      {
+        "label": "Soil Moisture (%)",
+        "key": "Soil_Moisture_Percent",
+        "unit": "%",
+        "value": "100.0 * ( 1.0 - (5.0*(readsensor %INPUT%)/1023) / (3-1.9) )",
         "category": "humidity"
       }
     ]
   },
   {
-    "id": "GENERIC_ANALOG",
+    "id": "OTHER_SENSOR_1",
     "type": "ANALOG",
-    "label": "Analog: other analog sensor",
-    "image": null,
+    "label": "Analog: Other Analog Sensor1",
+    "image": "static/datalog/sensor-img/analog-other-sensor.jpg",
     "fields": [
       {
-        "label": "Other",
-        "key": "Other"
+        "label": "Sensor1 (Analog)",
+        "key": "Sensor1_Analog"
+      }
+    ]
+  },
+  {
+    "id": "OTHER_SENSOR_2",
+    "type": "ANALOG",
+    "label": "Analog: Other Analog Sensor2",
+    "image": "static/datalog/sensor-img/analog-other-sensor.jpg",
+    "fields": [
+      {
+        "label": "Sensor2 (Analog)",
+        "key": "Sensor2_Analog"
       }
     ]
   }
