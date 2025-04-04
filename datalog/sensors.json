@@ -297,7 +297,7 @@
     "id": "OTHER_SENSOR_1",
     "type": "ANALOG",
     "label": "Analog: Other Analog Sensor1",
-    "image": "static/datalog/sensor-img/analog-other-sensor.jpg",
+    "image": "https://raw.githubusercontent.com/LILCMU/gogo-code-assets/refs/heads/main/datalog/images/analog-other-sensor.jpg",
     "fields": [
       {
         "label": "Sensor1 (Analog)",
@@ -309,7 +309,7 @@
     "id": "OTHER_SENSOR_2",
     "type": "ANALOG",
     "label": "Analog: Other Analog Sensor2",
-    "image": "static/datalog/sensor-img/analog-other-sensor.jpg",
+    "image": "https://raw.githubusercontent.com/LILCMU/gogo-code-assets/refs/heads/main/datalog/images/analog-other-sensor.jpg",
     "fields": [
       {
         "label": "Sensor2 (Analog)",
