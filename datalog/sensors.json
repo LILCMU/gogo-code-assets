@@ -3,6 +3,56 @@
     "": "-------------------------- #NOTE: Multi Port Sensors --------------------------"
   },
   {
+    "id": "BME680",
+    "type": "MULTI",
+    "label": "BME680 4-in-1 Environmental sensor",
+    "model": "BME680",
+    "image": "static/datalog/sensor-img/4-in-1-env-sensor-bme680.jpg",
+    "fields": [
+      {
+        "label": "Temperature (Celsius)",
+        "key": "Temperature_C",
+        "unit": "°C",
+        "datalogName": "Temperature_C",
+        "value": "tasmotamessage \"Temperature\"",
+        "category": "temperature"
+      },
+      {
+        "label": "Temperature (Fahrenheit)",
+        "key": "Temperature_F",
+        "unit": "°F",
+        "datalogName": "Temperature_F",
+        "value": "((((tonumber (tasmotamessage \"Temperature\")) * 9) / 5) + 32)",
+        "category": "temperature"
+      },
+      {
+        "label": "Humidity",
+        "key": "Humidity",
+        "unit": "%",
+        "value": "tasmotamessage \"Humidity\""
+      },
+      {
+        "label": "Dew point",
+        "key": "DewPoint",
+        "unit": "°C",
+        "value": "tasmotamessage \"DewPoint\""
+      },
+      {
+        "label": "Pressure",
+        "key": "Pressure",
+        "unit": "hPa",
+        "value": "tasmotamessage \"Pressure\""
+      },
+      {
+        "label": "Gas",
+        "key": "Gas",
+        "unit": "kΩ",
+        "value": "tasmotamessage \"Gas\"",
+        "category": "air quality"
+      }
+    ]
+  },
+  {
     "id": "SHT35",
     "type": "MULTI",
     "label": "I2C High Accuracy Temp & Humid Sensor",
@@ -97,56 +147,6 @@
         "key": "PM10",
         "unit": "µg/m³",
         "value": "tasmotamessage \"PM10\""
-      }
-    ]
-  },
-  {
-    "id": "BME680",
-    "type": "MULTI",
-    "label": "4-in-1 Environmental sensor",
-    "model": "BME680",
-    "image": "static/datalog/sensor-img/4-in-1-env-sensor-bme680.jpg",
-    "fields": [
-      {
-        "label": "Temperature (Celsius)",
-        "key": "Temperature_C",
-        "unit": "°C",
-        "datalogName": "Temperature_C",
-        "value": "tasmotamessage \"Temperature\"",
-        "category": "temperature"
-      },
-      {
-        "label": "Temperature (Fahrenheit)",
-        "key": "Temperature_F",
-        "unit": "°F",
-        "datalogName": "Temperature_F",
-        "value": "((((tonumber (tasmotamessage \"Temperature\")) * 9) / 5) + 32)",
-        "category": "temperature"
-      },
-      {
-        "label": "Humidity",
-        "key": "Humidity",
-        "unit": "%",
-        "value": "tasmotamessage \"Humidity\""
-      },
-      {
-        "label": "Dew point",
-        "key": "DewPoint",
-        "unit": "°C",
-        "value": "tasmotamessage \"DewPoint\""
-      },
-      {
-        "label": "Pressure",
-        "key": "Pressure",
-        "unit": "hPa",
-        "value": "tasmotamessage \"Pressure\""
-      },
-      {
-        "label": "Gas",
-        "key": "Gas",
-        "unit": "kΩ",
-        "value": "tasmotamessage \"Gas\"",
-        "category": "air quality"
       }
     ]
   },
