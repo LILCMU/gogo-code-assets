@@ -1,8 +1,8 @@
 {
   "id": 321275679,
   "tag_name": "260000",
-  "name": "Initial",
-  "body": "What's new",
+  "name": "Image Display",
+  "body": "## New: Image Display\r\n\r\n<img src=\"https://raw.githubusercontent.com/arnans/gogodoc/main/image-display/images/gogo-w-similyface.png\" alt=\"GoGo Board displaying a smiley face\" width=\"50%\"/>\r\n\r\nShow images on your GoGo Board's screen — photos, drawings, icons, or anything you like! Upload your own or pick from the built-in gallery, then display them from the web app or in your code.\r\n\r\n- Preview any image instantly from the **Image Gallery**\r\n- Use the new **`show image`** block in your programs\r\n- Upload, crop, and rotate your own images\r\n\r\n> Requires **firmware v3.2.4 or newer** and a **Wi-Fi connection**.\r\n\r\n📖 [Read the full guide →](https://arnans.github.io/gogodoc/image-display/image-display.html)\r\n",
   "published_at": "2026-05-12T16:29:49Z",
-  "updated_at": "2026-05-12T16:42:14Z"
+  "updated_at": "2026-06-04T16:34:00Z"
 }
