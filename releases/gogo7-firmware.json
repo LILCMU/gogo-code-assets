@@ -1,25 +1,25 @@
 {
-  "id": 367809118,
-  "tag_name": "version-3.2.5",
-  "name": "GoGo Board 7 version 3.2.5",
-  "body": "## This firmware powers the `GoGo Board 7`, unlocking advanced hardware capabilities that inspire children to explore computational thinking through creativity and play.\r\n\r\n### What's new in this version\r\n\r\n#### Stability & Fixes\r\n- Fixed Logo programs losing their variables. Any program using a background block, a message subscription, or a \"when\" condition silently reset variables that had already been set back to zero.\r\n- Fixed motors not responding when the run duration came from a variable, which stopped the motor almost immediately instead of running for the set time.\r\n- Fixed repeat blocks not running when the repeat count came from a variable.\r\n- Fixed wait blocks not pausing when the delay came from a variable.\r\n- Fixed text variables being stored as a number, which caused recorded sequences to play back as nothing.\r\n\r\n### Minimum hardware requirement\r\nGoGo Board version 7 or above\r\n\r\n### How to upgrade to this version\r\n- Auto update. When existing firmware is version 2.5.0 or above, update can take place within the [code.gogoboard.org](https://code.gogoboard.org) environment.\r\n- Manual update. Visit [install-firmware.gogoboard.org](https://install-firmware.gogoboard.org/) and follow the instructions.\r\n  > [Firmware update manual](https://github.com/arnans/gogodoc/blob/main/firmware-update/firmware-update-guide.md)\r\n\r\n### Known issues\r\n- Microphone not working. (in development)\r\n- IR transmitter not working. (in development)\r\n\r\n---\r\n\r\n## Bundled co-MCU firmware\r\n\r\n```\r\nvernier        v1.2.0               700b5f8    2025-11-14   gogo-co-firmware-vernier.factory.bin\r\ntasmota        gogo-4451f8f         4451f8f    2026-03-18   gogo-co-firmware-tasmota32c3.factory.bin\r\n```",
-  "published_at": "2026-08-10T09:40:30Z",
-  "updated_at": "2026-08-10T10:21:28Z",
+  "id": 373879077,
+  "tag_name": "version-3.2.6",
+  "name": "GoGo Board 7 version 3.2.6",
+  "body": "- Fixed showing an image restarting the board. Previewing a picture from the app or with `showimage` could reboot the board part-way through loading, seemingly at random.\n- Pictures now load in the background, so the display, buttons and app stay responsive while one downloads.\n- Fixed the board getting stuck in a restart loop after downgrading from a 4.0 preview or development build.\n\nGoGo Board version 7 or above\n\n- Auto update. When existing firmware is version 2.5.0 or above, update can take place within the [code.gogoboard.org](https://code.gogoboard.org) environment.\n- Manual update. Visit [install-firmware.gogoboard.org](https://install-firmware.gogoboard.org/) and follow the instructions.\n  > [Firmware update manual](https://github.com/arnans/gogodoc/blob/main/firmware-update/firmware-update-guide.md)\n\n- Microphone not working. (in development)\n- IR transmitter not working. (in development)\n\n---\n\n## Bundled co-MCU firmware\n\n```\nvernier        v1.2.0               700b5f8    2025-11-14   gogo-co-firmware-vernier.factory.bin\ntasmota        gogo-4451f8f         4451f8f    2026-03-18   gogo-co-firmware-tasmota32c3.factory.bin\n```\n",
+  "published_at": "2026-08-20T16:30:44Z",
+  "updated_at": "2026-08-20T16:30:47Z",
   "assets": [
     {
-      "id": 508583124,
+      "id": 522500838,
       "name": "gogo-co-firmware-tasmota32c3.factory.bin",
-      "browser_download_url": "https://github.com/LILCMU/gogo7-firmware/releases/download/version-3.2.5/gogo-co-firmware-tasmota32c3.factory.bin"
+      "browser_download_url": "https://github.com/LILCMU/gogo7-firmware/releases/download/version-3.2.6/gogo-co-firmware-tasmota32c3.factory.bin"
     },
     {
-      "id": 508597084,
+      "id": 522500887,
       "name": "gogo-co-firmware-vernier.factory.bin",
-      "browser_download_url": "https://github.com/LILCMU/gogo7-firmware/releases/download/version-3.2.5/gogo-co-firmware-vernier.factory.bin"
+      "browser_download_url": "https://github.com/LILCMU/gogo7-firmware/releases/download/version-3.2.6/gogo-co-firmware-vernier.factory.bin"
     },
     {
-      "id": 508573813,
-      "name": "gogo-firmware-v3.2.5.factory.bin",
-      "browser_download_url": "https://github.com/LILCMU/gogo7-firmware/releases/download/version-3.2.5/gogo-firmware-v3.2.5.factory.bin"
+      "id": 522500817,
+      "name": "gogo-firmware-v3.2.6.factory.bin",
+      "browser_download_url": "https://github.com/LILCMU/gogo7-firmware/releases/download/version-3.2.6/gogo-firmware-v3.2.6.factory.bin"
     }
   ]
 }
