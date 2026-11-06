@@ -176,6 +176,122 @@
     "setupCode": {
       "PORT_1": "send \"gpio0 1888\"",
       "PORT_2": "send \"gpio3 1888\""
+    },
+    "tasmota": {
+      "component": 1888,
+      "wire": "yellow",
+      "port2": "+1",
+      "source": "module",
+      "module": "SR04",
+      "readings": [
+        {
+          "key": "Distance",
+          "unit": "cm"
+        }
+      ],
+      "board": {
+        "label": "Distance",
+        "chip": "SR04",
+        "card": "Distance",
+        "group": "Inputs"
+      }
+    }
+  },
+  {
+    "id": "PORT_DS18B20",
+    "type": "DIGITAL",
+    "label": "DS18B20 Temperature Sensor",
+    "model": "DS18B20",
+    "tasmota": {
+      "boardOnly": true,
+      "component": 1312,
+      "wire": "yellow",
+      "port2": "+1",
+      "source": "module",
+      "module": "DS18B20",
+      "readings": [
+        {
+          "key": "Temperature",
+          "unit": "°C"
+        }
+      ],
+      "board": {
+        "label": "Temperature",
+        "chip": "DS18B20",
+        "card": "Temperature",
+        "group": "Inputs"
+      }
+    }
+  },
+  {
+    "id": "PORT_ANALOG",
+    "type": "DIGITAL",
+    "label": "Analog Sensor on a Configurable Port",
+    "tasmota": {
+      "boardOnly": true,
+      "component": 4704,
+      "wire": "yellow",
+      "port2": "+1",
+      "source": "module",
+      "module": "ANALOG",
+      "readings": [
+        {
+          "key": "A{n}",
+          "unit": ""
+        }
+      ],
+      "board": {
+        "label": "Analog sensor",
+        "card": "Analog",
+        "group": "Inputs"
+      }
+    }
+  },
+  {
+    "id": "PORT_RELAY",
+    "type": "DIGITAL",
+    "label": "Relay (On/Off Output)",
+    "tasmota": {
+      "boardOnly": true,
+      "component": 224,
+      "wire": "yellow",
+      "port2": "order",
+      "source": "power",
+      "readings": [
+        {
+          "key": "POWER{n}",
+          "unit": ""
+        }
+      ],
+      "board": {
+        "label": "On/off output",
+        "card": "On/off output",
+        "group": "Outputs"
+      }
+    }
+  },
+  {
+    "id": "PORT_BUTTON",
+    "type": "DIGITAL",
+    "label": "Button or Switch",
+    "tasmota": {
+      "boardOnly": true,
+      "component": 160,
+      "wire": "yellow",
+      "port2": "+1",
+      "setup": "SetOption114 1",
+      "source": "topLevel",
+      "readings": [
+        {
+          "key": "Switch{n}",
+          "unit": ""
+        }
+      ],
+      "board": {
+        "label": "Button",
+        "card": "Button",
+        "group": "Inputs"
+      }
     }
   },
   {
