@@ -206,7 +206,7 @@
       "boardOnly": true,
       "component": 1312,
       "wire": "yellow",
-      "port2": "+1",
+      "port2": "order",
       "source": "module",
       "module": "DS18B20",
       "readings": [
